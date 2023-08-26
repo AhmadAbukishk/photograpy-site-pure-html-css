@@ -1,0 +1,363 @@
+﻿* {
+    font-family: 'Noto Sans', sans-serif;
+    margin: 0px;
+    padding: 0px;
+}
+
+a {
+    text-decoration: none;
+}
+
+button {
+    background-color: white;
+    transition: background-color 2s;
+    transition: color 0.3s;
+    border-radius: 25px;
+    font-weight:500;
+}
+
+header {
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}    
+
+.full-width-img {
+    width: 100%;
+}
+
+#nav {
+    padding: 1% 2%;
+    box-shadow: 0 0 3px grey;
+    display: flex;
+    background-color: white;
+}
+
+#nav img {
+    width: 7%;
+}
+
+.nav-link {
+    color: black;
+    font-weight: 300;
+    margin-left: 2%;
+    margin-top: 0.4%;
+    font-size: 1.1rem;
+}
+
+#nav-register {
+    display:flex;
+    float:right;
+    flex-grow:1;
+    justify-content:end;
+}
+
+.nav-button {
+    font-weight:500;
+    font-size:1.1rem;
+}
+
+#log-in {
+    border: none;
+}
+
+#sign-up {
+    padding: 0 1% 0.3%;
+    margin-left: 1%;
+    
+}
+
+.nav-link:hover, #log-in:hover {
+    color: lightgrey;
+}
+
+#sign-up:hover {
+    background-color: black;
+    color: white;
+}
+
+
+#intro {
+    position: absolute;
+    padding-right: 65%;
+    top: 25%;
+    left: 5%;
+    color: white;
+}
+
+#intro-headline {
+    font-size: 3rem;
+    line-height: 1;
+    margin-bottom:5%;
+}
+
+#intro-button {
+    font-size: 1.5rem;
+    margin-top: 3%;
+    padding: 1% 9%;
+    background-color: transparent;
+    border: 1px solid white;
+    color:white;
+}
+
+#intro-button:hover {
+    background-color: white;
+    color: black;
+}
+
+
+
+#about-us-section {
+    text-align: center;
+    padding: 2% 0 5%;
+}
+
+#about-us-header {
+    padding: 0 20%;
+}
+
+#about-us-header-title{
+    font-weight: 400;
+    margin-bottom: 4%;
+    font-size: 3rem;
+}
+
+#about-us-points {
+    padding: 0 5%;
+    margin-top: 3%;
+    display: flex;
+    gap: 10%;
+}
+
+.about-us-card {
+    padding: 0 1%;
+    text-align: center;
+}
+
+.card-par {
+    font-size: 1.25rem;
+}
+
+.card-title {
+    margin-top: 1.5%;
+    margin-bottom: 1%;
+}
+
+
+
+#gallery-section{
+    text-align: center;
+    padding-bottom: 5%;
+}
+
+.gallery-imgs {
+    position: relative;
+}
+
+.img-taker {
+    position: absolute;
+    right: 3%;
+    bottom: 3%;
+    color: white;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.gallery-imgs:hover .img-taker {
+    opacity: 100%;
+}
+
+#gallery-header {
+    position: relative;
+    text-align: center;
+}
+
+#gallery-header-title {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 10rem;
+    letter-spacing: 2px;
+}
+
+#img-of-the-week {
+    padding: 5% 10%;
+}
+
+#the-week-img {
+    box-shadow: 0px 0px 20px 4px;
+}
+
+#img-of-the-week-description {
+    text-align:left;
+}
+
+#img-of-the-week-title {
+    font-size: 3rem;
+    font-weight: 600;
+    margin-bottom: 1%;
+}
+
+#img-of-the-week-quote {
+    padding-right: 10%;
+    font-size: 1.5rem;
+    font-style:italic;
+}
+
+#the-week-img {
+    float: left;
+    margin-right: 5%;
+}
+
+#img-of-the-week-btn{
+    margin-top: 2%;
+    background-color: black;
+    color: white;
+    font-size: 1.5rem;
+    padding: 0.5% 2.5%;
+}
+
+#img-of-the-week-btn:hover {
+    background-color: white;
+    color: black;
+}
+
+#gallery-flex {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1%;
+    padding: 10% 1% 4%;
+}
+
+.img-flex {
+    transition: box-shadow 0.3s;
+}
+
+.img-flex:hover {
+    box-shadow: 0px 0px 15px 2px;
+}
+
+#gallery-btn {
+    background-color: black;
+    color: white;
+    font-size: 1.5rem;
+    padding: 0.5% 2.5%;
+}
+
+#gallery-btn:hover {
+    background-color: white;
+    color: black;
+}
+
+#gallery-ending {
+    margin-top: 1%;
+    font-weight: 300;
+}
+
+#footer {
+    padding: 2% 2% 5%;
+    background-color: black;
+    color: white;
+    position: relative;
+
+}
+
+#footer-logo {
+    width: 10%;
+    display:inline-block;
+}
+
+#copyright {
+    position: absolute;
+    display: inline-block;
+    bottom: 2%;
+    right: 50%;
+    transform: translate(50%, 0);
+}
+
+#social-contacts {
+    margin-top: 1%;
+    justify-content: center;
+    padding-left: 0%;
+}
+
+.social-icon {
+    margin-right: 1%;
+}
+
+#contacts {
+    float: right;
+    font-size: 1.1rem;
+    font-weight: 300;
+    letter-spacing: 1px;
+}
+
+#email {
+    margin-bottom: 2%;
+}
+
+#contact-form-section {
+    padding: 5% 20%;
+}
+
+#form {
+    border: 1px solid black;
+    border-radius: 15px;
+    padding: 2% 6%;
+}
+
+#input-row {
+    margin:5% 0;
+}
+
+.form-input {
+    display: inline-block;
+}
+
+#form-phone {
+    float: right;
+    margin-right: 10%;
+}
+
+#form-message {
+    width: 100%;
+}
+
+#form-textarea {
+    width: 100%;
+    padding: 1%;
+    font-size: 0.9rem;
+}
+.form-text {
+    display: block;
+    border-radius: 5px;
+    padding: 2% 5%;
+    font-weight: 400;
+    border: 2px solid black;
+    margin-top: 1%;
+}
+
+.form-label {
+    font-weight: 300;
+}
+
+.form-text, .form-label {
+    font-size: 1.2rem;
+    
+}
+
+#submit-button {
+    font-size: 1.2rem;
+    margin-top :2%;
+    background-color: black;
+    color: white;
+    padding: 1% 2%;
+}
+
+#submit-button:hover {
+    background-color: white;
+    color: black;
+}
